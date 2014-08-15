@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="type.css" rel="stylesheet" type="text/css">
+<script src="type.js" type="text/javascript"></script>
+</head>
+<body onload="setPage()">
+<div id="outer">
+<div id="header">
+<h1>How Fast can You Type?</h1>
+<p>Type the entire sentence below.The test will begin when you type your first character.
+             When you are done,hit your tab key or click the stop button.</p>
+             <div id="header1">
+                 Errors are: <input type="text" id="error" size="5" readonly>
+                 <div id="timers" style="display: inline-block">Timer: <input type="text" id="timer" size=5 readonly style="float:right"></div>
+
+</div>
+</div>
+
+<div id="textType">
+
+<textarea  id="typeText" readonly></textarea>
+</div>
+
+<div id="text">
+<textarea  id="userType" autofocus="true" onkeypress="matchText(event);"></textarea>
+<div id="buttons"       >
+<input type="button" name="start" id="start1" value="START" onclick='setText();timers()'>
+<input type="button" name="stop" id="stop1" value="STOP" onclick="stops()">
+<input type="button" name="next" id="next1" value="NEXT" onclick="setText()">
+    <input type="button" name="reset" value="RESET" id="reset1" onclick='clears();'>
+</div></div>
+    <div id="footer">
+        Your speed is<input type="text" id="speed"> words per minute.
+    </div>
+</div>
+</body>
+</html>

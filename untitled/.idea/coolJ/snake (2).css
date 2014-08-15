@@ -1,0 +1,16 @@
+
+#main
+{
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+  border: 2px solid black;
+}
+#box
+{
+    margin: 0 auto;
+    width: 600px;
+    height: 500px;
+    border: 2px solid black;
+
+}

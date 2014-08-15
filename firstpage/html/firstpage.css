@@ -1,0 +1,126 @@
+#center
+{
+    margin: 0 auto;
+    height: 635px;
+    width:800px;
+
+
+
+}
+#header
+{
+    height: 50px;
+    width:800px;
+
+    background-color:lightskyblue;
+    float:left;
+}
+#heading
+{
+    color: darkgreen;
+    font-size:20px;
+    text-align:center;
+    margin-top: 07px;
+}
+#head
+{
+    height: 200px;
+    width:800px;
+
+    float:left;
+    background-color:olive;
+}
+#head1
+{
+    position:absolute;
+    left: 350px;
+    top: 130px;
+    font-size:30px;
+    color: darkgreen;
+}
+#menu
+{
+    height: 30px;
+    width:800px;
+
+    float:left;
+    background-color: orange;
+
+}
+a
+{
+
+    margin-left:20px;
+    margin-right:10px;
+      padding:10px;
+    text-decoration: none;
+}
+
+#middle
+{
+    height: 300px;
+    width:800px;
+
+    float:left;
+}
+#middleleft
+{
+    height: 300px;
+    width:250px;
+
+    float:left;
+    background-color:darkgreen;
+}
+#left
+{
+    color: white;
+    margin-left: 10px;
+}
+   #right
+   {
+       color: wheat;
+       margin-left: 100px;
+       margin-top: 40px;
+
+   }
+   #cen
+   {
+       color: wheat;
+       margin-left: 10px;
+       margin-top: 10px;
+   }
+#middlecenter
+{
+    height: 300px;
+    width:260px;
+         border-right-style: solid;
+         border-right-color: antiquewhite;
+    float:left;
+}
+#middleright
+{
+    height: 300px;
+    width:250px;
+
+    float:left;
+}
+   #imgr
+   {
+       margin-left: 30px;
+       margin-top: 50px;
+   }
+#footer
+{
+    height: 50px;
+    width:800px;
+
+    float:left;
+    background-color: slategrey;
+}
+     #center
+     {
+         position: fixed;
+         margin-left: 30px;
+         margin-top: 10px;
+
+     }

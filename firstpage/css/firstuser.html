@@ -1,0 +1,106 @@
+<form name="form">
+    <object id="Label1" width=96 height=24 classid="CLSID:978C9E23-D4B0-11CE-BF2D-00AA003F40D0">
+        <param name="Caption" value="ActiveX">
+    </object>
+    <br>
+    <script language="JavaScript">
+        <!-- // Hide Script from old browsersvar
+        /* OS checking in appVersion by Norman G. King
+
+         Email: cable@i1.net http://www.i1.net/~cable
+         */
+        function mac(){
+            return(navigator.appVersion.lastIndexOf('Mac') != -1 );
+        }
+        /* Netscape reports the processor type, Internet Explorer doesn't */
+        function ppc(){
+            return(navigator.appVersion.lastIndexOf('PPC') != -1 );
+        }
+        function intel(){
+            return((navigator.appVersion.lastIndexOf('Intel') != -1) || (navigator.appVersion.lastIndexOf('; I') != -1));
+        }
+        function rhapsody(){
+            return(navigator.appVersion.lastIndexOf('Rhapsody') != -1 );
+        }
+        function openstep(){        return(navigator.appVersion.lastIndexOf('OpenStep') != -1 );
+        }
+        function nextos(){
+            return(navigator.appVersion.lastIndexOf('Next') != -1 );
+        }
+        function linux(){
+            return(navigator.appVersion.lastIndexOf('Linux') != -1 );
+        }
+        function os2(){
+            return((navigator.appVersion.lastIndexOf('OS/2') != -1) || (navigator.appVersion.lastIndexOf('OS2') != -1));
+        }
+
+        function win(){
+            return(navigator.appVersion.lastIndexOf('Win') != -1 );
+        }
+        function win95(){
+            return((navigator.appVersion.lastIndexOf('Windows 95') != -1) || (navigator.appVersion.lastIndexOf('Win95') != -1));
+        }
+        function winNT(){
+            return((navigator.appVersion.lastIndexOf('Windows NT') != -1) || (navigator.appVersion.lastIndexOf('Windows NT') != -1));
+        }
+        function irix(){
+            return(navigator.appVersion.lastIndexOf('IRIX') != -1 );
+        }
+        function aix(){
+            return(navigator.appVersion.lastIndexOf('AIX') != -1 );
+        }
+        function sunos(){
+            return(navigator.appVersion.lastIndexOf('SUNOS') != -1 );
+        }
+        function solaris(){
+            return(navigator.appVersion.lastIndexOf('Solaris') != -1 );
+        }
+        function netscape(){
+            return(navigator.appName.lastIndexOf('Netscape') != -1 );
+        }
+        function explorer(){
+            return(navigator.appName.lastIndexOf('Explorer') != -1 );
+        }
+        // -->
+    </script>
+    <script language="JavaScript">
+        <!-- // Hide Script from old browsers
+        /* Gets browser's name and version by Norman G. King Email: cable@i1.net http://www.i1.net/~cable
+         */
+        function getBrowserNameVersion()
+
+        {       return(navigator.appName + " " + navigator.appVersion);     }
+        // -->
+    </script>
+    <script language="JavaScript">
+
+        <!-- Beginning of JavaScript Applet -------------------
+            /* Finds out the browser name and version and the OS used
+             and if ActiveX is enabled. By Norman G. King
+             Email: cable@i1.net http://www.i1.net/~cable
+             */
+                document.write(getBrowserNameVersion() + "<BR>");
+        if (netscape()) document.write("You are using Netscape<br>");
+        if (explorer()) document.write("You are using Internet Explorer<br>");
+        if (win95()) document.write("You are using Windows 95<br>");
+        if (winNT()) document.write("You are using Windows NT<br>");
+        if (mac()) document.write("You are using a Macintosh<br>");
+        if (linux()) document.write("You are using Linux<br>");
+        if (nextos()) document.write("You are using NeXTStep<br>");
+        if (os2()) document.write("You are using OS/2<br>");
+        if (rhapsody()) document.write("You are using Rhapsody<br>");
+        if (openstep()) document.write("You are using OpenStep<br>");
+        if (irix()) document.write("You are using IRIX<br>");
+        if (sunos()) document.write("You are using SunOS<br>");
+        if (aix()) document.write("You are using AIX<br>");
+        if (ppc()) document.write("With a PowerPC processor<br>");
+        if (intel()) document.write("With an Intel processor<br>");
+        if (document.form.Label1) { //ActiveX Object is there
+            document.write("You are ActiveX Enabled!<br>")
+        }
+        if (!(document.form.Label1)) { //ActiveX is not there
+            document.write("You are not ActiveX Enabled<br>")
+        }
+        // -->
+    </script>
+</form>

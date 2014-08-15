@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="light_box.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<p>This is the main content. To display a lightbox click
+    <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+        <img src="1.jpg"></a></p>
+<div id="light" class="white_content"> <img src="1.jpg" id="dis1">
+    <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">
+        <img src="cancel.jpg" id="dis"></a></div>
+<div id="fade" class="black_overlay"></div>
+</body>
+</html>

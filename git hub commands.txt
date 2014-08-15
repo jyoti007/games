@@ -1,0 +1,57 @@
+Press enter to submit commands
+
+> git init
+
+$ git status
+
+$ git status
+
+$ git add octocat.txt
+
+$ git status
+
+$ git commit -m "added first file to the master"
+
+$ git add '*.txt'
+
+$ git commit -m 'Added all files to the branch'
+
+$ git log
+
+$ git log --summary
+
+$ git remote add origin https://github.com/try-git/try_git.git
+
+$ git push -u origin master
+
+$ git status
+
+$ git pull origin master
+
+$ git diff head
+
+$ git add octofamily/octodog.txt
+
+$ git diff --staged
+
+$ git reset octofamily/octodog.txt
+
+$ git checkout -- octocat.txt
+
+$ git branch clean_up
+
+$ git checkout clean_up
+
+$ git rm '*.txt'
+
+$ git commit -m "removed"
+
+$ git checkout master
+
+$ git merge clean_up
+
+$ git branch -d clean_up
+
+$ git push
+
+> 

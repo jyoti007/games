@@ -1,0 +1,117 @@
+body{
+  background: url(bg.gif) 0 0 repeat;
+}
+#outer{
+
+
+    width: 100%;
+    height: 1000px;
+
+}
+
+#sidelink{
+    height: 1000px;
+    width:200px;
+
+}
+#links ul  ul li {
+    font-family: sans-serif;
+    font-size: 15px;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 10px;
+    color:lightblue;
+}
+#links ul li{
+    text-decoration: none;
+                    margin-top: 15px;
+    color: yellow;
+    list-style: none;
+
+}
+
+#headersearch{
+    height: 30px;
+    width:1130px;
+    position: absolute;
+    left:215px;
+
+}
+#header{
+    position: absolute;
+    top: 45px;
+    left:215px;
+    width: 835px;
+    height: 210px;
+    box-shadow: #444444;
+
+    background-color: black;
+    color:white;
+
+}
+#section{
+    position: absolute;
+    top: 250px;
+    left:215px;
+    width: 835px;
+    height: 560px;
+
+    background-color: white;
+     font: normal 20px/1.2 'Bree Serif', Georgia, serif;;
+}
+#adds{
+    position: absolute;
+    top: 40px;
+    left:1050px;
+    width: 290px;
+    height: 750px;
+
+}
+     #section2{
+         position: absolute;
+         top: 810px;
+         left:215px;
+         width: 1140px;
+         height: 100px;
+
+         background-color: yellow;
+     }
+     #footer{
+         position: absolute;
+         top: 906px;
+         left:215px;
+         width: 1140px;
+         height: 100px;
+
+         background-color: #444;
+     }
+     #section h2,p{
+         margin-left: 30px;
+         margin-top: 20px;
+     }
+
+     #top{
+         height: 300px;
+         width: 300px;
+
+     }
+     #down{
+         height: 450px;
+         width: 300px;
+                border-left-style: groove;
+         background-color: white;
+     }
+     #down h2{
+         color:blue;
+
+     }
+
+     #linkss a{
+              margin-top:3000000px;
+         margin-left: 100px;
+     }
+     #section2 p,img{
+         margin-top:5px;
+         margin-left:20px;
+         margin-bottom: 5px;
+     }

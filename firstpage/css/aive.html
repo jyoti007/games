@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        .note
+        {
+            color: violet;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function cool(){
+        var div = document.createElement('div');
+        div.textContent = "Sup, y'all?";
+        div.setAttribute('class', 'note');
+        document.body.appendChild(div);
+
+            var span = document.createElement('span');
+
+                span.textContent = "Hello!";
+
+            div.appendChild(span);
+            div.parentNode.removeChild(div);
+
+            var div = $('<div/>').text("Sup, y'all?").appendTo(document.body);
+            $('<span/>').text('Hello!').appendTo(div);
+        }
+    </script>
+</head>
+<body onload="cool();">
+
+</body>
+</html>

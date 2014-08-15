@@ -1,0 +1,103 @@
+#tot
+{
+    height: 1400px;
+    width: 1350px;
+    border-style: solid;
+     background: url("D:/jyoti/bg.gif");
+}
+img
+{
+    margin-left: 10px;
+    position: fixed;
+}
+ #sea
+ {
+     position: absolute;
+     left: 1100px;
+     top:30px;
+     border-radius: 12px;
+ }
+#sec
+{
+    position: absolute;
+    left:200px;
+    top:100px;
+    border-style:solid;
+    width: 1160px;
+    height: 1160px;
+    background-color: white;
+}
+#main
+{
+    position: absolute;
+    left: 10px;
+    top:200px;
+    line-height:normal;
+}
+#main a{
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 20px;
+}
+#main ul li,ul
+{
+
+    font-family: sans-serif;
+    color: white;
+    list-style: none;
+    display: block;
+    font-size: 20px;
+}
+#main ul ul li
+{
+        list-style: none;
+        display: block;
+    color: aqua;
+    text-decoration: none;
+}
+
+header
+{
+    width: 1160px;
+    height: 160px;
+    border-style:solid;
+    background-color:#222 ;
+}
+header h1,h2
+{
+    font-family: serif;
+     color:white;
+    font-size: 20px;
+    margin:30px 30px 30px 40px;
+}
+ h1
+ {
+     font-size: 40px;
+ }
+
+section
+{
+    width: 1160px;
+    height: 427px;
+     margin-left: 20px;
+
+}
+section h2
+{
+    color: #8b2;
+    font-family: serif;
+    font-size: 20px;
+    margin:30px 30px 30px 10px;
+}
+#firstfoot{
+    position: absolute;
+    width: 1160px;
+    height:200px;
+    background: orange;
+    margin-top: 30;
+}
+
+#secfoot
+{
+
+}

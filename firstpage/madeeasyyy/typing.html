@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="typing.css" type="text/css" rel="stylesheet">
+    <script src="typing.js" type="text/javascript"></script>
+</head>
+<body onload="set_data()">
+   <div id="main">
+     <div id="header">
+         <h1>How Fast Can You Type?</h1>
+         <p>
+             Type the entire sentence below.The test will begin when you type your first character.
+             When you are done,hit your tab key or click the stop button.
+         </p>
+
+     </div>
+       <textarea readonly id="one">
+
+       </textarea>
+       <textarea id="two" onkeypress="displayunicode(event);" >
+
+       </textarea>
+       <div id="timer">
+
+       </div>
+
+       <div id="speed">
+              <p>Your Speed is &nbsp;<input type="text" id="text1" > words per minute.</p>
+               <p id="err">No of errors are</p><input type="text" id="error">
+       </div>
+       <div id="container">
+           <input type="button" id="start" value="Start" onclick="start()">
+           <input type="button" id="stop" value="Stop" onclick="stop()">
+           <input type="button" id="reset" value="Reset" onclick="reset_data()">
+           <input type="button" id="next" value="Next" onclick="set_data()">
+
+       </div>
+       <footer>
+           <p>typing test@</p>
+       </footer>
+   </div>
+
+</body>
+</html>

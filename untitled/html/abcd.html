@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="snake.css" type="text/css">
+</head>
+<body>
+<div id="main">
+    <div id="box">
+        <script type="text/javascript">
+            var k=1,l=400;
+            var a=new Array();
+            var test="";
+            var k=1;
+            for(var i=0;i<10;i++)
+            {
+                a[i]=new Array(10);
+                for(var j=0;j<10;j++)
+                {
+                    a[i][j]="<input type='button' id="+i+j+" value="+k+"  >"
+                    k++;
+
+                }
+            }
+
+
+                  var b= a.slice(0,1);
+
+                document.getElementById('box').innerHTML=b;
+            var c= a.slice(1,2);
+            document.getElementById('box').innerHTML=c;
+
+
+        </script>
+    </div>
+</div>
+</body>
+</html>

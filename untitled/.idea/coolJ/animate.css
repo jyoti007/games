@@ -1,0 +1,26 @@
+ *
+ {
+     margin-top: 10px;
+ }
+  #main
+  {
+      margin:0 auto;
+      width:500px;
+      height:500px;
+      background-color: aliceblue;
+  }
+ h1
+ {
+     color: red;
+ }
+ #functions
+ {
+     position: relative;
+     top:300px;
+     margin-left: 50px;
+ }
+ #figure
+ {
+     height: 100px;
+     width: 100px;
+ }
