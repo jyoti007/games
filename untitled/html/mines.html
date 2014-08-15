@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="mines.css">
+<script type="text/javascript">
+var aa=0;
+var x;
+var y;
+var z;
+var h=0;
+var m=0;
+var s=0;
+var check=new Array(54);
+function rewal(){
+    var flag=0;
+    count=0;
+    var a=0;
+    check [a]= new Array(54);
+    var buttons = document.getElementsByClassName('cls_btn');
+
+    for (var i = 0; i < buttons.length; i++){
+        buttons[i].onclick = function(){
+            var p=this.id;
+
+
+
+            var q= document.getElementById(p).value;
+
+
+            check[a]=p;
+            //document.write(check[a]);
+            a++;
+
+
+
+            if(q=="X")
+            {
+                for (i=0;i<8;i++)
+                {
+                    for(var j=0;j<8;j++)
+                    {
+                        var s=document.getElementById('sub"'+i+'"+"'+j+'"').value;
+                        if(s=="X")
+                        {
+
+                            document.getElementById('sub"'+i+'"+"'+j+'"').style.color="black";
+
+
+                        }
+                    }
+                }
+                alert("Game over");
+            }
+            else if(q>0)
+            {
+                document.getElementById(p).style.color="black";
+                count++;
+               // document.write(count);
+            }
+            else if(q==0)
+            {
+
+                check[a]=p;
+                a++;
+                document.getElementById(p).style.color="black";
+                count++;
+                //document.write(count);
+                var s=p.substring(4,5);
+                for (var i=s;i<8;i++)
+                {
+                    for(var j=0;j<8;j++)
+                    {
+                        var t=document.getElementById('sub"'+i+'"+"'+j+'"').value;
+                        if(t=="X")
+                        {
+                            break;
+                        }
+                        else{
+
+                            var ids='sub"'+i+'"+"'+j+'"';
+
+                            for(var k=0;k<count;k++)
+                            {
+                                if(check[k]==ids){
+                                    flag=1;
+                                    break;
+                                }
+                                else
+                                {
+                                    flag=0;
+                                }
+                            }
+                            if(flag==0)
+                            {
+                                check[a]=ids;
+                                //document.write(check[a]);
+                                a++;
+                                document.getElementById('sub"'+i+'"+"'+j+'"').style.color="black";
+                                count++;
+                               // document.write(count);
+                            }
+                        }
+                    }}
+            }
+            if(count>=54)
+            {
+                alert('you win');
+            }
+
+        };
+
+    }
+
+}
+
+
+
+
+function draw(){
+    var i;
+    var my = new Array(8);
+    var html = '';
+    for (i=0;i<8;i++)
+    {
+        my [i]= new Array(8);
+        for(var j=0;j<8;j++)
+        {
+            html += '<input type="button" id=sub"'+i+'"+"'+j+'" class="cls_btn" value=0 onclick="rewal()" style="cursor:pointer;color:transparent;">'
+//document.write(my[i][j]);
+        }
+        html += "<br/>";
+        document.getElementById('buttons').innerHTML = html;
+    }
+
+    setMines();
+    for (i=0;i<8;i++)
+    {
+        for(var j=0;j<8;j++)
+        {
+            var z=document.getElementById('sub"'+i+'"+"'+j+'"').value;
+            if(z=="X")
+            {
+                if(i<7 && j<7)
+                {
+                    var a=parseInt(i);
+                    a=a+1;
+                    var b=parseInt(j);
+                    b=b+1;
+                    var p=document.getElementById('sub"'+a+'"+"'+b+'"').value;
+                    if(p!="X")
+                    {
+                        var g=parseInt(p);
+                        g=g+1;
+                        document.getElementById('sub"'+a+'"+"'+b+'"').value=g;
+                    }
+
+                }
+                if(i>0 && j>0)
+                {
+                    var a=parseInt(i);
+                    a=a-1;
+                    var b=parseInt(j);
+                    b=b-1;
+                    var p=document.getElementById('sub"'+a+'"+"'+b+'"').value;
+                    if(p!="X")
+                    {
+                        var g=parseInt(p);
+                        g=g+1;
+                        document.getElementById('sub"'+a+'"+"'+b+'"').value=g;
+                    }
+                }
+                if(i>0)
+                {
+                    var a=parseInt(i);
+                    a=a-1;
+                    var b=parseInt(j);
+                    var p=document.getElementById('sub"'+a+'"+"'+b+'"').value;
+                    if(p!="X")
+                    {
+                        var g=parseInt(p);
+                        g=g+1;
+                        document.getElementById('sub"'+a+'"+"'+b+'"').value=g;
+                    }
+                }
+                if(j<7){
+                    var a=parseInt(i);
+                    var b=parseInt(j);
+                    b=b+1;
+                    var p=document.getElementById('sub"'+a+'"+"'+b+'"').value;
+                    if(p!="X")
+                    {
+                        var g=parseInt(p);
+                        g=g+1;
+                        document.getElementById('sub"'+a+'"+"'+b+'"').value=g;
+                    }}
+                if(i<7){
+                    var a=parseInt(i);
+                    a=a+1;
+                    var b=parseInt(j);
+                    var p=document.getElementById('sub"'+a+'"+"'+b+'"').value;
+                    if(p!="X")
+                    {
+                        var g=parseInt(p);
+                        g=g+1;
+                        document.getElementById('sub"'+a+'"+"'+b+'"').value=g;
+                    }
+                }
+                if(i>0 && j<7)
+                {
+                    var a=parseInt(i);
+                    a=a-1;
+                    var b=parseInt(j);
+                    b=b+1;
+                    var p=document.getElementById('sub"'+a+'"+"'+b+'"').value;
+                    if(p!="X")
+                    {
+                        var g=parseInt(p);
+                        g=g+1;
+                        document.getElementById('sub"'+a+'"+"'+b+'"').value=g;
+                    }
+                }
+                if(j>0){
+                    var a=parseInt(i);
+                    var b=parseInt(j);
+                    b=b-1;
+                    var p=document.getElementById('sub"'+a+'"+"'+b+'"').value;
+                    if(p!="X")
+                    {
+                        var g=parseInt(p);
+                        g=g+1;
+                        document.getElementById('sub"'+a+'"+"'+b+'"').value=g;
+                    }
+                }
+                if(j>0 && i<7)
+                {
+                    var a=parseInt(i);
+                    a=a+1;
+                    var b=parseInt(j);
+                    b=b-1;
+                    var p=document.getElementById('sub"'+a+'"+"'+b+'"').value;
+                    if(p!="X")
+                    {
+                        var g=parseInt(p);
+                        g=g+1;
+                        document.getElementById('sub"'+a+'"+"'+b+'"').value=g;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+
+    alert("hello");
+}
+
+function getRandomNumber()
+{
+    return Math.floor((Math.random() * 1000) + 1) % 8;
+
+}
+function setMines(){
+    for(;aa<10;aa++){
+
+        x=getRandomNumber();
+        y=getRandomNumber();
+        z=document.getElementById('sub"'+x+'"+"'+y+'"').value;
+
+        if(z==0)
+        {
+            var p=x;
+            var q=y;
+            document.getElementById('sub"'+x+'"+"'+y+'"').value="X";
+        }
+        else
+        {
+            setMines();
+        }
+
+       // document.write(z);
+        //document.write(x);
+        //document.write(y);
+        //document.write("<br/>");
+    }
+}
+function timers()
+{
+
+    if(s<59){
+        s++;
+    }if(s==59)
+{
+    document.getElementById('speed').value=count;
+    count=0;
+    if(m<60){
+        s=0;
+        m++;
+
+    }
+}
+    if(m==60)
+    {
+        h++;
+
+    }
+    document.getElementById('timer').value=h+":"+m+":"+s;
+    if(stopper){
+        setTimeout(timers,1000);
+    }
+
+
+
+}
+function stops(){
+
+
+    stopper=false;
+
+
+}
+
+
+</script>
+</head>
+<body>
+<div id="outer">
+    <div id="header">
+        <input type="text" id="timer"  style="float:left">
+        <input id="main" type="image" src="1.jpg" height="50" width="50" onclick='draw();timers()' >
+    </div>
+
+
+
+<div id="buttons"> </div>
+
+</div>
+
+</body>
+
+</html>

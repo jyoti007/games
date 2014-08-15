@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="snake.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript">
+        function draw(){
+
+         var colors=['red','green','blue','pink','orange'];
+
+        var a=new Array();
+        var test="";
+        var k=100;
+        for(var i=1;i<=10;i++)
+        {
+            a[i]=new Array(10);
+            for(var j=1;j<=10;j++)
+            {
+             test +="<input type='button'  id="+i+j+" value="+k+" style='height:50px;width:50px;' >"
+                k--;
+
+
+            }
+            test +="<br>"
+            document.getElementById("box").innerHTML=test;
+
+        }
+            document.getElementById("510").value="uyhng vfgbv ";
+
+        }
+    </script>
+</head>
+<body>
+<div id="main">
+    <input type="button" id="onclik" onclick="draw()">
+    <div id="box">
+
+    </div>
+</div>
+</body>
+</html>

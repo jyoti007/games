@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<script type="text/javascript">
+    function insertScript(){
+        var sHTML="<input type=button onclick=" + "go2()" + " value='Click Me'><BR>";
+        var sScript="<SCRIPT DEFER>";
+        sScript = sScript + "function go2(){ alert('Hello from insertedscript.') }";
+
+        ScriptDiv.innerHTML = sHTML + sScript;
+        }
+</script>
+<BODY onload="insertScript();">
+        <DIV ID="ScriptDiv"></DIV>
+        </BODY>
+        </HTML>
+

@@ -1,0 +1,131 @@
+ body{
+     background-color: lightyellow;
+ }
+
+#game{
+    width: 720px;
+    height: 665px;
+
+    position: absolute;
+    left:300;
+    top:0px;
+                z-index: 1;
+    opacity: 0.4;
+
+
+
+
+
+}
+#leftside{
+    display:inline-block;
+    height: 100px;
+    width: 200px;
+
+    position:absolute;
+    top:100px;
+    left:0px;
+
+}
+#abc
+{
+    display:inline-block;
+    height: 80px;
+    width: 100px;
+
+    position:absolute;
+
+    left:60px;
+
+}
+#outer{
+    width: 720px;
+    height: 665px;
+
+    position: absolute;
+    top:0px;
+    left:300px;
+    z-index: 20;
+    opacity: 1000 ;
+}
+
+
+div.transbox {
+    width: 400px;
+    height: 180px;
+    margin: 30px 50px;
+    background-color: #ffffff;
+
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+           #img{
+               position: absolute;
+               left:100px;
+               top:40px;
+               width: 100px;
+               height:800px;
+               display:block;
+               text-align: -webkit-center;
+           }
+           #img1{
+               position: absolute;
+               left:500px;
+               top:160px;
+               width: 100px;
+               height:400px;
+               display:block;
+               text-align: -webkit-center;
+
+           }
+#img2{
+    position: absolute;
+    left:250px;
+    top:150px;
+    width: 100px;
+    height:250px;
+    display:block;
+    text-align: -webkit-center;
+
+}
+#img3{
+    position: absolute;
+    left:350px;
+    top:70px;
+    width: 100px;
+    height:400px;
+    display:block;
+    text-align: -webkit-center;
+
+}
+#img4{
+    position: absolute;
+    left:170px;
+    top:0px;
+    width: 100px;
+    height:550px;
+    display:block;
+    text-align: -webkit-center;
+
+}
+#img5{
+    position: absolute;
+    left:330px;
+    top:500px;
+    width: 100px;
+    height:150px;
+    display:block;
+    text-align: -webkit-center;
+
+}
+#img6{
+    position: absolute;
+    left:600px;
+    top:160px;
+    width: 100px;
+    height:450px;
+    display:block;
+    text-align: -webkit-center;
+
+}
+

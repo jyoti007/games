@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="firstpage.css" type="text/css"/>
+</head>
+<body>
+<div id="center">
+    <div id="header">
+       <p id="heading">We Will Show You The Way To Success</p>
+    </div>
+    <div id="head">
+        <img src="D:\jyoti\up.jpg" height="200" width="800">
+    </div>
+    <div id="menu">
+
+        <a href="home.html">HOME PAGE</a>|
+        <a href="home.html">PRODUCTS</a> |
+        <a href="home.html">SERVICES</a> |
+        <a href="home.html">ABOUT US</a>  |
+        <a href="home.html">CONTACT US</a>
+    </div>
+
+    <div id="middle">
+        <div id="middleleft">
+                <p id="left">News & Event</p>
+            <p id="cen">
+
+                BusinessCo is a company dedicated to the needs of Australian businesses. We specialise in business communication products and services that are aimed at making businesses more efficient, productive, and with tangible results. BusinessCo brands include BusinessCom, Business 1300 and Business Mobile Apps.
+            </p>
+            <p id="right">Readmore.....</p>
+        </div>
+        <div id="middlecenter">
+            <p id="heading">Welcome To BusinessCo</p>
+                        <p style="margin-left: 10px">Business 1300 is one of Australia’s leading providers of inbound telephony services. Inbound 13-1300-1800 numbers are more than just a national number. Apart from being fully portable and not restricted to a geographical area there are many advantages that an inbound number can bring to a business. Combined with an easy to remember smartnumber</p>
+        </div>
+        <div id="middleright">
+
+                 <img id="imgr" src="D:\jyoti\right.jpg" >
+        </div>
+    </div>
+
+    <div id="footer">
+         <p id="heading">Copyright@2014</p>
+    </div>
+
+
+</div>
+</body>
+</html>

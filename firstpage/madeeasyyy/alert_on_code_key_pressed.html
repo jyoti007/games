@@ -1,0 +1,15 @@
+<script type="text/javascript">
+    function displayunicode(e){
+        var unicode=e.keyCode? e.keyCode : e.charCode
+        if(unicode==37)
+        {
+            document.getElementById('but').value='red';
+
+        }
+        alert(unicode)
+    }
+</script>
+<form>
+    <input type="text" size="2" maxlength="1" onkeypress="displayunicode(event); this.select()">
+    <input type="button" id="but">
+    </form>
